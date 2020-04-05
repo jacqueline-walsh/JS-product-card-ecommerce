@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Product Card UI Design</title>
+</head>
+<body>
+    
+    <div class="card">
+        <h2>Nike</h2>
+        <h3>Men's training shoe</h3>
+        <div class="slider">
+            <figure class="active" data-color="#e24938, #a30f22">
+                <img src="img/1.png" alt="Nike Shoe">
+            </figure>
+
+            <figure data-color="#6cd96a, #00986f">
+                <img src="img/2.png" alt="Nike Shoe">
+            </figure>
+
+            <figure data-color="#4795d1, #006eb8">
+                <img src="img/3.png" alt="Nike Shoe">
+            </figure>  
+
+            <figure data-color="#292a2f, #131519">
+                <img src="img/4.png" alt="Nike Shoe">
+            </figure>
+        </div>
+        <ul>
+            <li class="active" data-num="0"><a>
+                <svg>
+                    <circle cx="8" cy="8" r="6.125" stroke="#a30f22"></circle>
+                </svg>
+                <span style="background: #a30f22"></span>
+            </a></li>
+            <li data-num="1"><a>
+                <svg>
+                    <circle cx="8" cy="8" r="6.125" stroke="#00986f"></circle>
+                </svg>
+                <span style="background: #00986f"></span>
+            </a></li>            
+            <li data-num="2"><a>
+                <svg>
+                    <circle cx="8" cy="8" r="6.125" stroke="#006eb8"></circle>
+                </svg>
+                <span style="background: #006eb8"></span>
+            </a></li>
+            <li data-num="3"><a>
+                <svg>
+                    <circle cx="8" cy="8" r="6.125" stroke="#131519"></circle>
+                </svg>
+                <span style="background: #131519"></span>
+            </a></li>
+        </ul>
+        <div class="price">€130.00</div>
+        <button>Add to cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(15deg, #d33f34 50%, #a61322 50.1%);
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    z-index: 2;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+h3 {
+    font-size: 17px;
+    opacity: .8p;
+}
+
+.slider {
+    padding: 10px;
+}
+
+figure {
+    width: 100%;
+    display: none;
+}
+
+figure.active {
+    display: block;
+}
+
+figure img {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+    list-style: none;
+}
+
+ul svg {
+    width: 100%;
+    height: 100%;
+}
+
+ul a {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+ul circle {
+    fill: none;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-dasharray: 39 39;
+    stroke-dashoffset: 39;
+    transition: all .9s ease-in-out;
+    transition: stroke-dashoffset .5s;
+}
+
+ul li.active circle {
+    stroke-dashoffset: 0;
+}
+
+ul span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.price {
+    float: left;
+    color: #ff3100;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 4px;
+    transition: color .3s ease-in-out;
+}
+
+button {
+    float: right;
+    color: #ff3100;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    line-height: 12px;
+    outline: none;
+    border: 1px solid #ff3100;
+    border-radius: 20px;
+    transition: all .4s ease-in-out;
+}
+
+button:hover {
+    color: #fff;
+    background: linear-gradient(15deg, #d33f34 50%, #a61322 50.1%);
+}
